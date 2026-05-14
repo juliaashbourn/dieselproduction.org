@@ -1,128 +1,163 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HUNANIMA - Machines Agricoles Simples</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #fefefe;
-      color: #333;
-    }
-    header {
-      background-color: #2e7d32; /* Vert foncé */
-      color: #fdd835; /* Jaune vif */
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    header p {
-      margin: 5px 0 0;
-      font-size: 1.2em;
-    }
-    nav {
-      background-color: #fdd835;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #2e7d32;
-    }
-    .hero {
-      background: url('https://i.pinimg.com/550x/a9/df/51/a9df5172829f8c05f5b92f97553d41ae.jpg') no-repeat center center/cover;
-      height: 350px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 4px #000;
-      font-size: 2em;
-    }
-    section {
-      padding: 50px 20px;
-      text-align: center;
-    }
-    section h2 {
-      color: #2e7d32;
-      margin-bottom: 20px;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .gallery img {
-      width: 280px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    footer {
-      background-color: #2e7d32;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-    footer p {
-      margin: 5px 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diesel Production LLC | Industrial Engineering & Maintenance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0f1113; color: #e2e8f0; scroll-behavior: smooth; }
+        .heading-font { font-family: 'Barlow Condensed', sans-serif; }
+        .orange-accent { color: #ff6b00; }
+        .bg-orange-accent { background-color: #ff6b00; }
+        .industrial-grid {
+            background-image: linear-gradient(rgba(15, 17, 19, 0.9), rgba(15, 17, 19, 0.9)), url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&q=80&w=1920');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .glass-panel { background: rgba(30, 34, 39, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .stats-border { border-left: 4px solid #ff6b00; }
+    </style>
 </head>
 <body>
 
-  <header>
-    <h1>HUNANIMA</h1>
-    <p>Machines Agricoles Simples et Fiables</p>
-  </header>
+    <nav class="fixed w-full z-50 bg-black/80 border-b border-white/10 py-4 px-8 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="heading-font text-3xl tracking-tighter uppercase italic">Diesel <span class="orange-accent">Production</span></div>
+            <div class="hidden lg:flex gap-10 text-[11px] font-bold uppercase tracking-[0.2em]">
+                <a href="#home" class="hover:orange-accent transition">Operation</a>
+                <a href="#expertise" class="hover:orange-accent transition">Expertise</a>
+                <a href="#standards" class="hover:orange-accent transition">Standards</a>
+                <a href="#privacy" class="hover:orange-accent transition">Data Safety</a>
+                <a href="#contact" class="bg-orange-accent text-black px-6 py-2 hover:bg-white transition">Inquiry</a>
+            </div>
+        </div>
+    </nav>
 
-  <nav>
-    <a href="#about">À propos</a>
-    <a href="#gallery">Galerie</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <section id="home" class="min-h-screen flex items-center pt-20 industrial-grid px-8">
+        <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="bg-orange-accent text-black text-[10px] font-black px-3 py-1 uppercase tracking-widest rounded-sm">Coos Bay Operations</span>
+                <h1 class="heading-font text-7xl md:text-9xl uppercase leading-none mt-6 mb-8">Heavy <br>Duty <br><span class="orange-accent italic">Precision.</span></h1>
+                <p class="text-zinc-400 text-lg max-w-lg mb-12 border-l-2 border-zinc-700 pl-6">
+                    Specialized automotive repair and maintenance infrastructure for heavy-duty diesel systems. Engineering reliability into every component.
+                </p>
+                <div class="flex gap-6">
+                    <a href="#expertise" class="bg-white text-black font-bold px-10 py-4 uppercase text-xs tracking-widest hover:bg-orange-accent transition">Capabilities</a>
+                    <a href="#contact" class="border border-white/20 px-10 py-4 uppercase text-xs tracking-widest hover:bg-white/10 transition">Location</a>
+                </div>
+            </div>
+            <div class="relative hidden lg:block">
+                <img src="https://images.unsplash.com/photo-1486006920555-c77dcf18193b?auto=format&fit=crop&q=80&w=800" class="rounded-lg shadow-2xl grayscale hover:grayscale-0 transition duration-1000" alt="Engine Precision">
+                <div class="absolute -bottom-10 -left-10 glass-panel p-8">
+                    <p class="heading-font text-4xl italic">99.8%</p>
+                    <p class="text-[10px] uppercase tracking-widest text-zinc-500">Service Reliability</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="hero">
-    <p>Votre partenaire pour des machines agricoles durables</p>
-  </div>
+    <section id="expertise" class="py-32 px-8 bg-zinc-950">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+                <h2 class="heading-font text-5xl md:text-7xl uppercase">Operational <br>Expertise.</h2>
+                <div class="text-right">
+                    <p class="text-orange-accent font-bold italic mb-2">Since Launch</p>
+                    <p class="text-zinc-500 text-sm max-w-xs">Managed by Ronald Duane Daltonjr, maintaining peak industrial standards in Oregon.</p>
+                </div>
+            </div>
 
-  <section id="about">
-    <h2>À propos de nous</h2>
-    <p>
-      Chez <strong>HUNANIMA</strong>, nous nous spécialisons dans la fabrication et la distribution de 
-      <strong>machines agricoles simples</strong> pour faciliter le travail des agriculteurs. 
-      Nos solutions combinent <em>durabilité, efficacité et innovation</em> afin de répondre aux besoins de toutes les exploitations.
-    </p>
-  </section>
+            <div class="grid md:grid-cols-3 gap-1">
+                <div class="glass-panel p-12 hover:bg-orange-accent group transition duration-500">
+                    <h3 class="heading-font text-3xl mb-6 group-hover:text-black">REPAIR & OVERHAUL</h3>
+                    <p class="text-zinc-500 group-hover:text-black/80 text-sm leading-relaxed">Comprehensive maintenance of automotive diesel production systems and heavy machinery components.</p>
+                </div>
+                <div class="glass-panel p-12 hover:bg-orange-accent group transition duration-500">
+                    <h3 class="heading-font text-3xl mb-6 group-hover:text-black">MAINTENANCE MGMT</h3>
+                    <p class="text-zinc-500 group-hover:text-black/80 text-sm leading-relaxed">Systematic scheduling and oversight of industrial assets to prevent operational downtime.</p>
+                </div>
+                <div class="glass-panel p-12 hover:bg-orange-accent group transition duration-500">
+                    <h3 class="heading-font text-3xl mb-6 group-hover:text-black">DIAGNOSTIC TECH</h3>
+                    <p class="text-zinc-500 group-hover:text-black/80 text-sm leading-relaxed">Advanced failure analysis and technological integration for modern diesel engine production.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="gallery">
-    <h2>Nos Machines</h2>
-    <div class="gallery">
-      <img src="http://ogden_images.s3.amazonaws.com/www.motherearthnews.com/images/2014/11/22234423/Boaz-Mini-Combine-jpg.jpg" alt="Mini moissonneuse">
-      <img src="https://krs-agro.ru/products/zagotovka_kormov/elho/19/7.jpg" alt="Machine agricole">
-      <img src="https://img.mod-network.net/files/images/6218ac69d37fb/SimpleFarmSilov1000_6222.jpg" alt="Équipement agricole simple">
-    </div>
-  </section>
+    <section id="standards" class="py-32 px-8">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24 items-center">
+            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1000" class="grayscale brightness-50" alt="Industrial Facility">
+            <div class="space-y-12">
+                <div class="stats-border pl-8">
+                    <h4 class="heading-font text-2xl mb-2">OREGON COMPLIANCE</h4>
+                    <p class="text-zinc-500 text-sm italic">Fully registered and operational entity in Coos Bay, serving the Pacific Northwest industrial sector.</p>
+                </div>
+                <div class="stats-border pl-8">
+                    <h4 class="heading-font text-2xl mb-2">PRINCIPAL LEADERSHIP</h4>
+                    <p class="text-zinc-500 text-sm italic">Led by Ronald Duane Daltonjr, ensuring rigorous quality control across all production phases.</p>
+                </div>
+                <div class="stats-border pl-8">
+                    <h4 class="heading-font text-2xl mb-2">TECHNICAL SUPPORT</h4>
+                    <p class="text-zinc-500 text-sm italic">Dedicated infrastructure for technical inquiries and high-level industrial consultation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contactez-nous</h2>
-    <p><strong>Email :</strong> admin@tyusex.shop</p>
-    <p><strong>Téléphone :</strong> +33 7 38 50 26 36</p>
-    <p><strong>Adresse :</strong> Avenue Baratier, Montmorency, 95160, France</p>
-  </section>
+    <section id="privacy" class="py-32 px-8 bg-zinc-900/50 border-y border-white/5">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="heading-font text-4xl uppercase mb-4">Privacy Framework</h2>
+                <div class="w-16 h-1 bg-orange-accent mx-auto"></div>
+            </div>
+            <div class="glass-panel p-10 h-80 overflow-y-scroll text-[11px] uppercase tracking-widest text-zinc-500 leading-loose">
+                <p class="font-bold text-white mb-6">Last Updated: May 15, 2026</p>
+                <p class="mb-4">Diesel Production LLC ("the Company") is committed to safeguarding industrial and personal data. This policy details our data management standards for our Coos Bay, Oregon operations.</p>
+                
+                <h5 class="text-white font-bold mt-8 mb-4">1. DATA ACQUISITION</h5>
+                <p class="mb-4">We collect minimal identifiable data required for industrial services, including business contact info (support@dieselproduction.org) and operational logs for maintenance purposes.</p>
+                
+                <h5 class="text-white font-bold mt-8 mb-4">2. PROTECTION PROTOCOLS</h5>
+                <p class="mb-4">All digital and physical records are secured via multi-layer encryption and strict access controls. We maintain a zero-tolerance policy regarding the sale of data to third-party entities.</p>
+                
+                <h5 class="text-white font-bold mt-8 mb-4">3. COMPLIANCE</h5>
+                <p>Diesel Production LLC operates in full alignment with the privacy statutes of the State of Oregon and Federal US regulations.</p>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 HUNANIMA - Tous droits réservés.</p>
-  </footer>
+    <footer id="contact" class="pt-32 pb-12 px-8 bg-black">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-20 mb-32">
+                <div>
+                    <h2 class="heading-font text-6xl uppercase mb-12">Let's <br>Coordinate.</h2>
+                    <div class="space-y-8">
+                        <div>
+                            <span class="text-orange-accent text-[10px] font-black tracking-widest block mb-2 uppercase italic">Operational Email</span>
+                            <a href="mailto:contact@dieselproduction.org" class="text-3xl font-light hover:orange-accent transition">contact@dieselproduction.org</a>
+                        </div>
+                        <div>
+                            <span class="text-orange-accent text-[10px] font-black tracking-widest block mb-2 uppercase italic">Primary Line</span>
+                            <a href="tel:16816829640" class="text-3xl font-light hover:orange-accent transition">+1 681-682-9640</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:text-right flex flex-col justify-end">
+                    <p class="text-zinc-700 text-[10px] font-black tracking-[0.4em] mb-4 uppercase">Regional Headquarters</p>
+                    <p class="text-2xl leading-relaxed italic">
+                        934 Pacific Ave Coos Bay<br>
+                        Oregon, 97420-2822<br>
+                        United States
+                    </p>
+                </div>
+            </div>
+            <div class="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between text-[9px] font-bold tracking-[0.3em] text-zinc-600 uppercase">
+                <p>&copy; 2026 DIESEL PRODUCTION LLC. INDUSTRIAL ASSETS SECURED.</p>
+                <p>Oregon Registration • Heavy Industry</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
